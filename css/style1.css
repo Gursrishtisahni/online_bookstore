@@ -1,0 +1,120 @@
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    width: 300px;
+    border: 3px solid #eae5e5;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+
+
+/* CSS Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.95); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Apply Animations */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    animation: fadeIn 2s ease-in;
+}
+
+nav h1 {
+    animation: fadeIn 2s ease-in;
+    animation-delay: 0.5s;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+    width: 180px;
+}
+
+.book img {
+    animation: scaleUp 0.5s ease-in-out;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.book img:hover {
+    transform: scale(1.05);
+}
+
+.book h2, .book p {
+    animation: fadeIn 1s ease-in;
+    animation-delay: 0.5s;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#cart {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}

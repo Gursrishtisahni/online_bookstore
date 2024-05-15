@@ -1,0 +1,17 @@
+header{
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEHjBOH7nvpAJf099oO7WNm0zcb_fC-qEyzSPr0EaZcrNNb1vcuboxH3bZVW5wl3mRg&usqp=CAU);
+}
+h2{
+    text-align: center;
+    color: aqua;
+}
+.products{
+    flex-wrap: wrap;
+    border: 5px solid wheat;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: bisque;
+}
